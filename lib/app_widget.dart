@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'pages/home.dart';
+import 'pages/home/home.dart';
 
 class MyApp extends StatelessWidget {
   MyApp({super.key});
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primaryColor: Colors.black),
       //home: const Home(),
-      home: const Home(),
+      home: const HomePage(),
     );
   }
 }
