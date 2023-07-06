@@ -10,9 +10,10 @@ class StoreCarBottomNavigator extends StatelessWidget {
       backgroundColor: Colors.black,
       unselectedLabelStyle: const TextStyle(color: Colors.white),
       selectedLabelStyle: const TextStyle(color: Colors.blue),
+      useLegacyColorScheme: false,
       items: [
         BottomNavigationBarItem(
-            icon: Image.asset('assets/img/two-cars.png'), label: "todos"),
+            icon: Image.asset('assets/img/two-cars.png'), label: "Todos"),
         BottomNavigationBarItem(
             icon: Image.asset('assets/img/sale-car.png'), label: "Novos"),
         BottomNavigationBarItem(
