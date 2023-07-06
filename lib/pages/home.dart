@@ -1,6 +1,6 @@
-import 'package:desafio_mjv_academy/components/storecar_bottom_navigator.dart';
 import 'package:flutter/material.dart';
 
+import '../components/storecar_bottom_navigator.dart';
 import '../components/storecar_drawer_menu.dart';
 
 class Home extends StatefulWidget {
