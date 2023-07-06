@@ -17,7 +17,7 @@ class _StoreCarBottomNavigatorState extends State<StoreCarBottomNavigator> {
   Widget build(BuildContext context) {
     final homeProvider = Provider.of<HomeProvider>(context);
     return BottomNavigationBar(
-      currentIndex: 1,
+      currentIndex: 0,
       backgroundColor: Colors.black,
       unselectedLabelStyle: const TextStyle(color: Colors.white),
       selectedLabelStyle: const TextStyle(color: Colors.blue),
