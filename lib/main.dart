@@ -1,4 +1,4 @@
-import 'package:desafio_mjv_academy/pages/home.dart';
+import 'package:desafio_mjv_academy/pages/home/home.dart';
 import 'package:desafio_mjv_academy/providers/home_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       home: PageView(
         controller: pageViewContoller,
         children: const [
-          Home(),
+          HomePage(),
         ],
       ),
     );

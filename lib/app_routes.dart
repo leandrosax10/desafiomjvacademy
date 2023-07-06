@@ -1,6 +1,6 @@
-import 'package:desafio_mjv_academy/pages/home.dart';
-import 'package:desafio_mjv_academy/pages/novos.dart';
-import 'package:desafio_mjv_academy/pages/seminovos.dart';
+import 'package:desafio_mjv_academy/pages/home/home.dart';
+import 'package:desafio_mjv_academy/pages/novos/novos.dart';
+import 'package:desafio_mjv_academy/pages/seminovos/seminovos.dart';
 import 'package:flutter/material.dart';
 
 class AppRoutes {
@@ -11,7 +11,7 @@ class AppRoutes {
 
   static Map<String, Widget Function(BuildContext)> routes() {
     return {
-      initialRoute: (context) => const Home(),
+      initialRoute: (context) => const HomePage(),
       novos: (context) => const NovosPage(),
       seminovos: (context) => const SeminovosPage(),
       // detalhe: (context) => const DetalhePage(),

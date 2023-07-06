@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../components/storecar_bottom_navigator.dart';
+import '../../components/storecar_bottom_navigator.dart';
 
 class NovosPage extends StatelessWidget {
   const NovosPage({super.key});
