@@ -17,6 +17,8 @@ dependencies:
   flutter_launcher_icons: ^0.13.1
   dio: ^5.2.1+1
   carousel_slider: ^4.2.1
+  flutterando_analysis: ^0.0.2
+
   
 
 dev_dependencies:
