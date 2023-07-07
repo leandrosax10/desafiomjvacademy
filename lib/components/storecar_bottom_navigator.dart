@@ -8,11 +8,11 @@ class StoreCarBottomNavigator extends StatefulWidget {
   const StoreCarBottomNavigator({super.key});
 
   @override
-  State<StoreCarBottomNavigator> createState() => _StoreCarBottomNavigatorState();
+  State<StoreCarBottomNavigator> createState() =>
+      _StoreCarBottomNavigatorState();
 }
 
 class _StoreCarBottomNavigatorState extends State<StoreCarBottomNavigator> {
-
   @override
   Widget build(BuildContext context) {
     final homeProvider = Provider.of<HomeProvider>(context);
