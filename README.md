@@ -10,8 +10,7 @@ Link do protótipo final(figma): https://www.figma.com/file/BkowmxqJK9L6CymKgVYd
 
 <p align="center"> • 
  <a href="#features">Features</a> •
- <a href="#roadmap">Roadmap</a> • 
- <a href="#demonstração">Demonstração</a> • 
+ <a href="#roadmap">Roadmap</a> •  
  <a href="#como-utilizar">Como utilizar</a> •
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#packages">Packages</a> • 
