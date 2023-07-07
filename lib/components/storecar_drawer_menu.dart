@@ -72,7 +72,7 @@ class StoreCarDrawerMenu extends StatelessWidget {
               image: 'assets/img/about.png',
               label: 'Sobre nós',
               width: mediaQuery.width - 70,
-              onTap: () => Navigator.of(context).pushNamed(AppRoutes.cadastro),
+              onTap: () => Navigator.of(context).pushNamed(AppRoutes.sobre),
             ),
             const StoreCarSizedBox(isFull: true),
             Image.asset(
