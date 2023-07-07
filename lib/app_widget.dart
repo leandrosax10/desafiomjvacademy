@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'pages/home/home.dart';
+import 'app_routes.dart';
 
 class MyApp extends StatelessWidget {
   MyApp({super.key});
@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
       title: 'StoreCar',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primaryColor: Colors.black),
-      //home: const Home(),
-      home: const HomePage(),
+      initialRoute: AppRoutes.initialRoute,
+      routes: AppRoutes.routes(),
     );
   }
 }

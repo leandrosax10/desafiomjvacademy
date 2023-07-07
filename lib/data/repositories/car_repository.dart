@@ -1,24 +1,19 @@
-import 'dart:convert';
-
-import 'package:desafio_mjv_academy/data/http/exceptions.dart';
-import 'package:desafio_mjv_academy/data/http/http_client.dart';
 import 'package:desafio_mjv_academy/data/models/car_model.dart';
 
-abstract class ICarRepository {
-  Future<List<CarModel>> getCars();
-}
+import '../../services/custom_dio.dart';
 
-class CarRepository implements ICarRepository {
-  final IHttpClient client;
+class CarRepository {
+  final CustomDio dio;
 
-  CarRepository({required this.client});
+  CarRepository({required this.dio});
 
-  @override
-   Future<List<CarModel>> getCars() async {
+  Future<List<CarModel>> getCars() async {
     try {
-      var response = await client.get(url: 'https://storecarapi.onrender.com/cars');
-      return (response.data).map((item) => CarModel.fromJson(item)).toList();
-    }  catch (e) {
+      var response = await dio.client.get('/cars/');
+      return (response.data as List)
+          .map((item) => CarModel.fromJson(item))
+          .toList();
+    } catch (e) {
       throw Exception('Não foi possível carregar os veículos');
     }
   }
@@ -44,5 +39,4 @@ class CarRepository implements ICarRepository {
     }
   }
  */
-
 }
