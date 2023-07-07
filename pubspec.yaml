@@ -16,6 +16,7 @@ dependencies:
   provider: ^6.0.5
   flutter_launcher_icons: ^0.13.1
   dio: ^5.2.1+1
+  flutterando_analysis: ^0.0.2
   
 
 dev_dependencies:
