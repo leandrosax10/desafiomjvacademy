@@ -31,14 +31,14 @@ Link do protótipo final(figma): https://www.figma.com/file/BkowmxqJK9L6CymKgVYd
 ## 🗺Roadmap
 1. Desenvolvimento da estrutura base de pastas tendo como referência o Clean Dart;
 2. Implementação do Flutter Modular com as rotas iniciais;
-3. Desenvolvimento das classes responsáveis por conexão com o Firebase;
-4. Implementado a regra de negócios e integração com o Firebase;
+3. Desenvolvimento das classes responsáveis por conexão com a API;
+4. Implementado a regra de negócios e integração com a API;
 5. Implementado gerenciamento de estado com ValueNotifier;
 6. Desenvolvimento de customs widgets  e desacoplamento de services para padronização do app;
 7. Desenvolvimento das funcionalidades;
 8. Organização do fluxo do aplicativo;
 9. Reestruturação nas pages;
-10. Refactory do Mock da API;
+10. Consumo da API;
 
 
 ## 🎨Demonstração
