@@ -42,14 +42,6 @@ Link do protótipo final(figma): https://www.figma.com/file/BkowmxqJK9L6CymKgVYd
 10. Consumo da API;
 
 
-## 🎨Demonstração
-
-Seguem telas:
-
-
-<img src="https://github.com/ambitencourt/desafio_banco_amigo/blob/master/assets/images/Presentation/login.jpg" height="300em"/><img src="https://github.com/ambitencourt/desafio_banco_amigo/blob/master/assets/images/Presentation/register.jpg" height="300em"/><img src="https://github.com/ambitencourt/desafio_banco_amigo/blob/master/assets/images/Presentation/register2.jpg" height="300em"/><img src="https://github.com/ambitencourt/desafio_banco_amigo/blob/master/assets/images/Presentation/home.jpg" height="300em"/><img src="https://github.com/ambitencourt/desafio_banco_amigo/blob/master/assets/images/Presentation/home2.jpg" height="300em"/>
-
-
 ## 🏁Como utilizar
 
 1. Instale o NodeJs(https://nodejs.org/en/), caso já tenha instalado, siga até o passo 2;
