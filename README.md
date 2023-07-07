@@ -52,14 +52,15 @@ Seguem telas:
 ## 🏁Como utilizar
 
 1. Instale o NodeJs(https://nodejs.org/en/), caso já tenha instalado, siga até o passo 2;
-2. Primeiro instale o Json Server com o comando:
-   npm install -g json-server
-3. Inicialize o Json Server no terminal de sua IDE(Vscode, Android Studio...) com o comando:
-  json-server --watch db.json --routes routes.json --port 8080 
-4. Execute em um emulador Android; 
-5. Crie uma conta no aplicativo e faça login;
-6. Para testar a operação de transferência, insira o valor que quer transferir e informe o número da conta de destino(accountNumber) presente no arquivo db.json, como na imagem abaixo: 
-<img src="https://github.com/ambitencourt/desafio_banco_amigo/blob/master/assets/images/Presentation/transferir.JPG" height="300em"/>
+2. Clone o repositório:
+   `$ https://github.com/leandrosax10/desafiomjvacademy.git`
+3.  Entre na pasta
+ `$ cd desafiomjvacademy`
+4. Execute o comando para baixar as bibliotecas;
+   `$ flutter pub get ` 
+5. Execute em um emulador Android;
+7. Execute o comando para rodar o projeto: `$ flutter run ` 
+
 
 
 ## 🛠Tecnologias
