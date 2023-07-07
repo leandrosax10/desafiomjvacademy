@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../../components/storecar_app_bar.dart';
 
-
 class Veiculo {
   String nome;
   String marca;
@@ -34,11 +33,13 @@ class Veiculo {
 }
 
 class RegistrationForm extends StatefulWidget {
+  const RegistrationForm({super.key});
+
   @override
-  _RegistrationFormState createState() => _RegistrationFormState();
+  RegistrationFormState createState() => RegistrationFormState();
 }
 
-class _RegistrationFormState extends State<RegistrationForm> {
+class RegistrationFormState extends State<RegistrationForm> {
   final _formKey = GlobalKey<FormState>();
   final _veiculo = Veiculo(
     nome: '',
@@ -58,8 +59,6 @@ class _RegistrationFormState extends State<RegistrationForm> {
   void _submitForm() {
     if (_formKey.currentState!.validate()) {
       _formKey.currentState!.save();
-
-      
 
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Cadastro realizado com sucesso!')),
@@ -110,7 +109,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
             },
           ),
           TextFormField(
-            decoration:const InputDecoration(labelText: 'Cor'),
+            decoration: const InputDecoration(labelText: 'Cor'),
             validator: (value) {
               if (value!.isEmpty) {
                 return 'Por favor, insira uma cor';
@@ -159,7 +158,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
             },
           ),
           TextFormField(
-            decoration: InputDecoration(labelText: 'Preço'),
+            decoration: const InputDecoration(labelText: 'Preço'),
             keyboardType: TextInputType.number,
             validator: (value) {
               if (value!.isEmpty) {
@@ -172,7 +171,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
             },
           ),
           TextFormField(
-            decoration: InputDecoration(labelText: 'Quantidade'),
+            decoration: const InputDecoration(labelText: 'Quantidade'),
             keyboardType: TextInputType.number,
             validator: (value) {
               if (value!.isEmpty) {
@@ -185,7 +184,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
             },
           ),
           TextFormField(
-            decoration: InputDecoration(labelText: 'Ano'),
+            decoration: const InputDecoration(labelText: 'Ano'),
             keyboardType: TextInputType.number,
             validator: (value) {
               if (value!.isEmpty) {
@@ -207,13 +206,13 @@ class _RegistrationFormState extends State<RegistrationForm> {
                   });
                 },
               ),
-              Text('Vendido'),
+              const Text('Vendido'),
             ],
           ),
           TextFormField(
-          initialValue: '212617-5689',
-           enabled: false,
-            decoration: InputDecoration(labelText: 'Telefone'),
+            initialValue: '212617-5689',
+            enabled: false,
+            decoration: const InputDecoration(labelText: 'Telefone'),
             keyboardType: TextInputType.phone,
             validator: (value) {
               if (value!.isEmpty) {
@@ -227,7 +226,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
           ),
           ElevatedButton(
             onPressed: _submitForm,
-            child: Text('Cadastrar'),
+            child: const Text('Cadastrar'),
           ),
         ],
       ),
@@ -235,15 +234,12 @@ class _RegistrationFormState extends State<RegistrationForm> {
   }
 }
 
-
-
 class CadastroPage extends StatelessWidget {
   const CadastroPage({super.key});
 
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       appBar: StoreCarAppBar(
         title: 'Cadastro',
       ),
