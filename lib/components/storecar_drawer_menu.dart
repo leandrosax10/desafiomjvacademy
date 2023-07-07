@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../app_routes.dart';
+import 'drawer_widget.dart';
 import 'storecar_sizebox.dart';
 import 'storecar_text_widget.dart';
 
@@ -37,92 +39,40 @@ class StoreCarDrawerMenu extends StatelessWidget {
             ),
             const Divider(color: Colors.white),
             const StoreCarSizedBox(size: 30),
-            Container(
-              height: 35,
+            DrawerWidget(
+              image: 'assets/img/two-cars.png',
+              label: 'Todos',
               width: mediaQuery.width - 190,
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              decoration: const BoxDecoration(
-                color: Colors.white,
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Image.asset(
-                    'assets/img/two-cars.png',
-                    color: Colors.black,
-                    width: 20,
-                    height: 20,
-                  ),
-                  const StoreCarSizedBox(isHorizontal: true),
-                  const TextWidget('Todos')
-                ],
-              ),
+              onTap: () =>
+                  Navigator.of(context).pushNamed(AppRoutes.initialRoute),
             ),
             const StoreCarSizedBox(),
-            Container(
-              height: 35,
+            DrawerWidget(
+              image: 'assets/img/new-car.png',
+              label: 'Novos',
               width: mediaQuery.width - 160,
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              decoration: const BoxDecoration(
-                color: Colors.white,
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Image.asset(
-                    'assets/img/new-car.png',
-                    color: Colors.black,
-                    width: 20,
-                    height: 20,
-                  ),
-                  const StoreCarSizedBox(isHorizontal: true),
-                  const TextWidget('Novos')
-                ],
-              ),
+              onTap: () => Navigator.of(context).pushNamed(AppRoutes.novos),
             ),
             const StoreCarSizedBox(),
-            Container(
-              height: 35,
+            DrawerWidget(
+              image: 'assets/img/sale-car.png',
+              label: 'Seminovos',
               width: mediaQuery.width - 130,
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              decoration: const BoxDecoration(
-                color: Colors.white,
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Image.asset(
-                    'assets/img/sale-car.png',
-                    color: Colors.black,
-                    width: 20,
-                    height: 20,
-                  ),
-                  const StoreCarSizedBox(isHorizontal: true),
-                  const TextWidget('Seminovos')
-                ],
-              ),
+              onTap: () => Navigator.of(context).pushNamed(AppRoutes.seminovos),
             ),
             const StoreCarSizedBox(),
-            Container(
-              height: 35,
+            DrawerWidget(
+              image: 'assets/img/register.png',
+              label: 'Cadastrar veículo',
               width: mediaQuery.width - 100,
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              decoration: const BoxDecoration(
-                color: Colors.white,
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Image.asset(
-                    'assets/img/about.png',
-                    color: Colors.black,
-                    width: 20,
-                    height: 20,
-                  ),
-                  const StoreCarSizedBox(isHorizontal: true),
-                  const TextWidget('Sobre nós')
-                ],
-              ),
+              onTap: () => Navigator.of(context).pushNamed(AppRoutes.cadastro),
+            ),
+            const StoreCarSizedBox(),
+            DrawerWidget(
+              image: 'assets/img/about.png',
+              label: 'Sobre nós',
+              width: mediaQuery.width - 70,
+              onTap: () => Navigator.of(context).pushNamed(AppRoutes.cadastro),
             ),
             const StoreCarSizedBox(isFull: true),
             Image.asset(
