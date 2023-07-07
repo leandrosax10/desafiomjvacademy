@@ -1,4 +1,5 @@
 # StoreCar
+![App](https://github.com/leandrosax10/storecar-api/blob/master/src/img/logotipoStoreCar.png)
 ![Concept:](https://img.shields.io/badge/Concept-Test-green)
 
 Um aplicativo que é uma loja de veículos, consumindo uma api externa.
