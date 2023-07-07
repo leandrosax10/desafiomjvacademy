@@ -1,6 +1,7 @@
 import 'pages/home/home.dart';
 import 'pages/novos/novos.dart';
 import 'pages/seminovos/seminovos.dart';
+
 import 'package:flutter/material.dart';
 
 class AppRoutes {
@@ -13,7 +14,7 @@ class AppRoutes {
     return {
       '/': (context) => const HomePage(),
       '/novos': (context) => const NovosPage(),
-      '/seminovos': (context) => const SeminovosPage(),
+      '/seminovos': (context) => const SemiNovosPage(),
       // detalhe: (context) => const DetalhePage(),
     };
   }

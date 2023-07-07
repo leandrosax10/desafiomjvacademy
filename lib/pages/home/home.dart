@@ -1,9 +1,11 @@
+import 'package:desafio_mjv_academy/components/storecar_sizebox.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../components/storecar_bottom_navigator.dart';
 import '../../components/storecar_drawer_menu.dart';
+import '../../components/storecar_text_widget.dart';
 import '../../data/repositories/car_repository.dart';
 import '../../services/custom_dio.dart';
 import 'stores/car_store.dart';
@@ -45,28 +47,24 @@ class _HomePageState extends State<HomePage> {
 
             if (carStore.erro.isNotEmpty) {
               return Center(
-                child: Text(
+                child: TextWidget(
                   carStore.erro,
-                  style: const TextStyle(
-                    color: Colors.black54,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 20,
-                  ),
-                  textAlign: TextAlign.center,
+                  color: Colors.black54,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 20,
+                  align: TextAlign.center,
                 ),
               );
             }
 
             if (carStore.state.isEmpty) {
               return const Center(
-                child: Text(
+                child: TextWidget(
                   'Nenhum item na lista',
-                  style: TextStyle(
-                    color: Colors.black54,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 20,
-                  ),
-                  textAlign: TextAlign.center,
+                  color: Colors.black54,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 20,
+                  align: TextAlign.center,
                 ),
               );
             } else {
@@ -90,33 +88,27 @@ class _HomePageState extends State<HomePage> {
                       ),
                       ListTile(
                         contentPadding: EdgeInsets.zero,
-                        title: Text(
+                        title: TextWidget(
                           item.name ?? '',
-                          style: const TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 24,
-                          ),
+                          color: Colors.black54,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 20,
                         ),
                         subtitle: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            TextWidget(
                               'R\$ ${item.price}',
-                              style: const TextStyle(
-                                color: Colors.green,
-                                fontWeight: FontWeight.w600,
-                                fontSize: 20,
-                              ),
+                              color: Colors.blue,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 20,
                             ),
-                            const SizedBox(height: 4),
-                            Text(
+                            const StoreCarSizedBox(size: 4),
+                            TextWidget(
                               item.description ?? '',
-                              style: const TextStyle(
-                                color: Colors.black54,
-                                fontWeight: FontWeight.w400,
-                                fontSize: 18,
-                              ),
+                              color: Colors.black54,
+                              fontWeight: FontWeight.w400,
+                              fontSize: 18,
                               overflow: TextOverflow.ellipsis,
                               maxLines: 2,
                             ),
