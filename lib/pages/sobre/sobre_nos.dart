@@ -17,7 +17,6 @@ final List<Map<String, String>> pages = [
   },
 ];
 
-//------------------------------------------
 class SobreNosPage extends StatelessWidget {
   const SobreNosPage({super.key});
 
@@ -34,66 +33,42 @@ class SobreNosPage extends StatelessWidget {
           return buildPage(page);
         },
         options: CarouselOptions(
-            enableInfiniteScroll: false,
-            height: MediaQuery.of(context).size.height,
-            viewportFraction: 1.0),
+          enableInfiniteScroll: false,
+          height: MediaQuery.of(context).size.height,
+          viewportFraction: 1.0,
+          enlargeCenterPage: true,
+          autoPlay: true,
+        ),
       ),
-
-      /* body: PageView(
-        children: [
-          const Center(
-              child: TextWidget(
-              'Slide 1',
-              color: Colors.blue,
-              align: TextAlign.center,
-              fontWeight: FontWeight.w500,
-              fontSize: 20,
-            ),
-          ),
-          Container(
-            color: Colors.amber,
-            child: const Center(
-              child: TextWidget(
-                'Slide 2',
-                color: Colors.white,
-                align: TextAlign.center,
-                fontWeight: FontWeight.w500,
-                fontSize: 20,
-              ),
-            ),
-          ),
-        ],
-      ), */
     );
   }
 
-  //teste
- Widget buildPage(Map<String, String> page) {
-  return Container(
-    padding: const EdgeInsets.all(16.0),
-    child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        ClipRRect(
-          borderRadius: BorderRadius.circular(100.0),
-          child: Image.network(
-            page['imageUrl']!,
-            height: 200,
+  Widget buildPage(Map<String, String> page) {
+    return Container(
+      padding: const EdgeInsets.all(16.0),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          ClipRRect(
+            borderRadius: BorderRadius.circular(100.0),
+            child: Image.network(
+              page['imageUrl']!,
+              height: 200,
+            ),
           ),
-        ),
-        const SizedBox(height: 16.0),
-        Text(
-          page['title']!,
-          style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-        ),
-        const SizedBox(height: 8.0),
-        Text(
-          page['text']!,
-          textAlign: TextAlign.center,
-          style: const TextStyle(fontSize: 18),
-        ),
-      ],
-    ),
-  );
-}
+          const SizedBox(height: 16.0),
+          Text(
+            page['title']!,
+            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          ),
+          const SizedBox(height: 8.0),
+          Text(
+            page['text']!,
+            textAlign: TextAlign.center,
+            style: const TextStyle(fontSize: 18),
+          ),
+        ],
+      ),
+    );
+  }
 }
