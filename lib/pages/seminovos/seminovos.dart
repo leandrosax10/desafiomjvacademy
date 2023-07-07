@@ -8,8 +8,7 @@ import '../../components/storecar_drawer_menu.dart';
 import '../../components/storecar_text_widget.dart';
 import '../../data/repositories/car_repository.dart';
 import '../../services/custom_dio.dart';
-import '../home/stores/car_store.dart';
-
+import '../home/car_store.dart';
 
 class SemiNovosPage extends StatefulWidget {
   const SemiNovosPage({super.key});

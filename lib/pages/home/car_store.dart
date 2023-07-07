@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 
-import '../../../data/http/exceptions.dart';
-import '../../../data/models/car_model.dart';
-import '../../../data/repositories/car_repository.dart';
+import '../../data/http/exceptions.dart';
+import '../../data/models/car_model.dart';
+import '../../data/repositories/car_repository.dart';
 
 class CarStore extends ChangeNotifier {
   final CarRepository repository;
