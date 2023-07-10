@@ -3,6 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../components/storecar_app_bar.dart';
 import '../../components/storecar_bottom_navigator.dart';
 import '../../components/storecar_drawer_menu.dart';
 import '../../components/storecar_text_widget.dart';
@@ -38,7 +39,9 @@ class _SemiNovosPageState extends State<SemiNovosPage> {
       create: (_) => store,
       child: Scaffold(
         drawer: const StoreCarDrawerMenu(),
-        appBar: AppBar(),
+        appBar: StoreCarAppBar(
+          widget: Image.asset('assets/img/logo2.png'),
+        ),
         body: Consumer<CarStore>(
           builder: (context, carStore, child) {
             if (carStore.isLoading) {

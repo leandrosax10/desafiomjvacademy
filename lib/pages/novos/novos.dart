@@ -1,3 +1,4 @@
+import 'package:desafio_mjv_academy/components/storecar_app_bar.dart';
 import 'package:desafio_mjv_academy/components/storecar_sizebox.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
@@ -38,7 +39,9 @@ class _NovosPageState extends State<NovosPage> {
       create: (_) => store,
       child: Scaffold(
         drawer: const StoreCarDrawerMenu(),
-        appBar: AppBar(),
+        appBar: StoreCarAppBar(
+          widget: Image.asset('assets/img/logo2.png'),
+        ),
         body: Consumer<CarStore>(
           builder: (context, carStore, child) {
             if (carStore.isLoading) {
