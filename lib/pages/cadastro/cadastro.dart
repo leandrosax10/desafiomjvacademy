@@ -66,6 +66,7 @@ class RegistrationFormState extends State<RegistrationForm> {
     }
   }
 
+
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -310,12 +311,23 @@ class RegistrationFormState extends State<RegistrationForm> {
               _veiculo.telefone = value!;
             },
           ),
-          ElevatedButton(
-            onPressed: _submitForm,
-            style: ButtonStyle(
-                shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16.0)))),
-            child: const Text('Cadastrar'),
+          const SizedBox(height: 12),
+          SizedBox(
+            width: 340,
+            height: 60,
+            child: ElevatedButton(
+              onPressed: _submitForm,
+              style: ButtonStyle(
+                  shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(60.0)))),
+              child: const Text(
+                'Salvar',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
           ),
         ],
       ),
