@@ -73,7 +73,14 @@ class RegistrationFormState extends State<RegistrationForm> {
       child: Column(
         children: [
           TextFormField(
-            decoration: const InputDecoration(labelText: 'Nome'),
+            decoration: InputDecoration(
+              labelText: 'Nome',
+              enabledBorder: OutlineInputBorder(
+                borderSide: const BorderSide(
+                    width: 1, color: Color.fromARGB(255, 200, 202, 202)),
+                borderRadius: BorderRadius.circular(50.0),
+              ),
+            ),
             validator: (value) {
               if (value!.isEmpty) {
                 return 'Por favor, insira um nome';
@@ -84,8 +91,16 @@ class RegistrationFormState extends State<RegistrationForm> {
               _veiculo.nome = value!;
             },
           ),
+          const SizedBox(height: 4),
           TextFormField(
-            decoration: const InputDecoration(labelText: 'Marca'),
+            decoration: InputDecoration(
+              labelText: 'Marca',
+              enabledBorder: OutlineInputBorder(
+                borderSide: const BorderSide(
+                    width: 1, color: Color.fromARGB(255, 200, 202, 202)),
+                borderRadius: BorderRadius.circular(50.0),
+              ),
+            ),
             validator: (value) {
               if (value!.isEmpty) {
                 return 'Por favor, insira uma marca';
@@ -96,8 +111,16 @@ class RegistrationFormState extends State<RegistrationForm> {
               _veiculo.marca = value!;
             },
           ),
+          const SizedBox(height: 4),
           TextFormField(
-            decoration: const InputDecoration(labelText: 'Câmbio'),
+            decoration: InputDecoration(
+              labelText: 'Câmbio',
+              enabledBorder: OutlineInputBorder(
+                borderSide: const BorderSide(
+                    width: 1, color: Color.fromARGB(255, 200, 202, 202)),
+                borderRadius: BorderRadius.circular(50.0),
+              ),
+            ),
             validator: (value) {
               if (value!.isEmpty) {
                 return 'Por favor, insira o tipo de câmbio';
@@ -108,8 +131,16 @@ class RegistrationFormState extends State<RegistrationForm> {
               _veiculo.cambio = value!;
             },
           ),
+          const SizedBox(height: 4),
           TextFormField(
-            decoration: const InputDecoration(labelText: 'Cor'),
+            decoration: InputDecoration(
+              labelText: 'Cor',
+              enabledBorder: OutlineInputBorder(
+                borderSide: const BorderSide(
+                    width: 1, color: Color.fromARGB(255, 200, 202, 202)),
+                borderRadius: BorderRadius.circular(50.0),
+              ),
+            ),
             validator: (value) {
               if (value!.isEmpty) {
                 return 'Por favor, insira uma cor';
@@ -120,8 +151,16 @@ class RegistrationFormState extends State<RegistrationForm> {
               _veiculo.cor = value!;
             },
           ),
+          const SizedBox(height: 4),
           TextFormField(
-            decoration: const InputDecoration(labelText: 'Descrição'),
+            decoration: InputDecoration(
+              labelText: 'Descrição',
+              enabledBorder: OutlineInputBorder(
+                borderSide: const BorderSide(
+                    width: 1, color: Color.fromARGB(255, 200, 202, 202)),
+                borderRadius: BorderRadius.circular(50.0),
+              ),
+            ),
             validator: (value) {
               if (value!.isEmpty) {
                 return 'Por favor, insira uma descrição';
@@ -132,8 +171,16 @@ class RegistrationFormState extends State<RegistrationForm> {
               _veiculo.descricao = value!;
             },
           ),
+          const SizedBox(height: 4),
           TextFormField(
-            decoration: const InputDecoration(labelText: 'Quilometragem'),
+            decoration: InputDecoration(
+              labelText: 'Quilometragem',
+              enabledBorder: OutlineInputBorder(
+                borderSide: const BorderSide(
+                    width: 1, color: Color.fromARGB(255, 200, 202, 202)),
+                borderRadius: BorderRadius.circular(50.0),
+              ),
+            ),
             keyboardType: TextInputType.number,
             validator: (value) {
               if (value!.isEmpty) {
@@ -145,8 +192,16 @@ class RegistrationFormState extends State<RegistrationForm> {
               _veiculo.km = int.parse(value!);
             },
           ),
+          const SizedBox(height: 4),
           TextFormField(
-            decoration: const InputDecoration(labelText: 'Imagem'),
+            decoration: InputDecoration(
+              labelText: 'Imagem',
+              enabledBorder: OutlineInputBorder(
+                borderSide: const BorderSide(
+                    width: 1, color: Color.fromARGB(255, 200, 202, 202)),
+                borderRadius: BorderRadius.circular(50.0),
+              ),
+            ),
             validator: (value) {
               if (value!.isEmpty) {
                 return 'Por favor, insira uma URL de imagem';
@@ -157,8 +212,16 @@ class RegistrationFormState extends State<RegistrationForm> {
               _veiculo.imagem = value!;
             },
           ),
+          const SizedBox(height: 4),
           TextFormField(
-            decoration: const InputDecoration(labelText: 'Preço'),
+            decoration: InputDecoration(
+              labelText: 'Preço',
+              enabledBorder: OutlineInputBorder(
+                borderSide: const BorderSide(
+                    width: 1, color: Color.fromARGB(255, 200, 202, 202)),
+                borderRadius: BorderRadius.circular(50.0),
+              ),
+            ),
             keyboardType: TextInputType.number,
             validator: (value) {
               if (value!.isEmpty) {
@@ -170,8 +233,16 @@ class RegistrationFormState extends State<RegistrationForm> {
               _veiculo.preco = double.parse(value!);
             },
           ),
+          const SizedBox(height: 4),
           TextFormField(
-            decoration: const InputDecoration(labelText: 'Quantidade'),
+            decoration: InputDecoration(
+              labelText: 'Quantidade',
+              enabledBorder: OutlineInputBorder(
+                borderSide: const BorderSide(
+                    width: 1, color: Color.fromARGB(255, 200, 202, 202)),
+                borderRadius: BorderRadius.circular(50.0),
+              ),
+            ),
             keyboardType: TextInputType.number,
             validator: (value) {
               if (value!.isEmpty) {
@@ -183,8 +254,16 @@ class RegistrationFormState extends State<RegistrationForm> {
               _veiculo.quantidade = int.parse(value!);
             },
           ),
+          const SizedBox(height: 4),
           TextFormField(
-            decoration: const InputDecoration(labelText: 'Ano'),
+            decoration: InputDecoration(
+              labelText: 'Ano',
+              enabledBorder: OutlineInputBorder(
+                borderSide: const BorderSide(
+                    width: 1, color: Color.fromARGB(255, 200, 202, 202)),
+                borderRadius: BorderRadius.circular(50.0),
+              ),
+            ),
             keyboardType: TextInputType.number,
             validator: (value) {
               if (value!.isEmpty) {
@@ -212,7 +291,14 @@ class RegistrationFormState extends State<RegistrationForm> {
           TextFormField(
             initialValue: '212617-5689',
             enabled: false,
-            decoration: const InputDecoration(labelText: 'Telefone'),
+            decoration: InputDecoration(
+              labelText: 'Telefone',
+              enabledBorder: OutlineInputBorder(
+                borderSide: const BorderSide(
+                    width: 1, color: Color.fromARGB(255, 200, 202, 202)),
+                borderRadius: BorderRadius.circular(50.0),
+              ),
+            ),
             keyboardType: TextInputType.phone,
             validator: (value) {
               if (value!.isEmpty) {
@@ -226,6 +312,9 @@ class RegistrationFormState extends State<RegistrationForm> {
           ),
           ElevatedButton(
             onPressed: _submitForm,
+            style: ButtonStyle(
+                shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16.0)))),
             child: const Text('Cadastrar'),
           ),
         ],
