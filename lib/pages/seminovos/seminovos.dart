@@ -79,7 +79,8 @@ class _SemiNovosPageState extends State<SemiNovosPage> {
                 itemCount: carStore.state.length,
                 itemBuilder: (_, index) {
                   final item = carStore.state[index];
-                  return Column(
+                  return 
+                   Column(
                     children: [
                       Container(
                         decoration: BoxDecoration(
@@ -101,7 +102,7 @@ class _SemiNovosPageState extends State<SemiNovosPage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             TextWidget(
-                              'R\$ ${item.price}',
+                              'R\$ ${item.price}0,00',
                               color: Colors.blue,
                               fontWeight: FontWeight.w600,
                               fontSize: 20,
@@ -111,7 +112,7 @@ class _SemiNovosPageState extends State<SemiNovosPage> {
                               item.description ?? '',
                               color: Colors.black54,
                               fontWeight: FontWeight.w400,
-                              fontSize: 18,
+                              fontSize: 14,
                               overflow: TextOverflow.ellipsis,
                               maxLines: 2,
                             ),

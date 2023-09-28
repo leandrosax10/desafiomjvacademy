@@ -101,7 +101,7 @@ class _NovosPageState extends State<NovosPage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             TextWidget(
-                              'R\$ ${item.price}',
+                              'R\$ ${item.price}0,00',
                               color: Colors.blue,
                               fontWeight: FontWeight.w600,
                               fontSize: 20,
@@ -111,7 +111,7 @@ class _NovosPageState extends State<NovosPage> {
                               item.description ?? '',
                               color: Colors.black54,
                               fontWeight: FontWeight.w400,
-                              fontSize: 18,
+                              fontSize: 12,
                               overflow: TextOverflow.ellipsis,
                               maxLines: 2,
                             ),
