@@ -45,9 +45,9 @@ Link do protótipo final(figma): https://www.figma.com/file/BkowmxqJK9L6CymKgVYd
 
 1. Instale o NodeJs(https://nodejs.org/en/), caso já tenha instalado, siga até o passo 2;
 2. Clone o repositório:
-   `$ https://github.com/leandrosax10/desafiomjvacademy.git`
+   `$ git@github.com:leandrosax10/storeCar.git`
 3.  Entre na pasta
- `$ cd desafiomjvacademy`
+ `$ cd storeCar`
 4. Execute o comando para baixar as bibliotecas;
    `$ flutter pub get ` 
 5. Execute em um emulador Android;
@@ -70,6 +70,7 @@ Os seguintes packages foram utilizados no projeto:
 - [Flutter Modular](https://pub.dev/packages?q=flutter_modular)
 - [Dio](https://pub.dev/packages/dio)
 - [Carousel slider](https://pub.dev/packages/carousel_slider)
+- [animated_text_kit](https://pub.dev/packages/animated_text_kit)
 
 ## 🤝Contribuição
 
