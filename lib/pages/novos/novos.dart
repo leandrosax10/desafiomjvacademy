@@ -115,6 +115,14 @@ class _NovosPageState extends State<NovosPage> {
                               overflow: TextOverflow.ellipsis,
                               maxLines: 2,
                             ),
+                            // ano
+                            TextWidget(
+                              'Ano ${item.year}',
+                              color: Colors.blue,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 20,
+                            ),
+                            //fim ano
                           ],
                         ),
                       )
