@@ -11,7 +11,7 @@ class SplashScreenPage extends StatefulWidget {
 
 class _SplashScreenPageState extends State<SplashScreenPage> {
   openHome() {
-    Future.delayed(const Duration(seconds: 6), () {
+    Future.delayed(const Duration(seconds: 2), () {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (builder) => const HomePage()));
     });
@@ -19,10 +19,10 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
 
 //Animação
   var colorizeColors = [
-    Colors.purple,
+    //Colors.purple,
     Colors.blue,
     Colors.yellow,
-    Colors.red,
+    //Colors.red,
   ];
 
   var colorizeTextStyle = const TextStyle(
@@ -43,12 +43,12 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
-                  Color.fromARGB(255, 230, 240, 230),
-                  Color.fromARGB(255, 5, 71, 126)
+                  Color.fromARGB(255, 82, 82, 82),
+                  Color.fromARGB(255, 1, 3, 5)
                 ],
                 stops: [
-                  0.3,
-                  0.9
+                  0.0,
+                  0.1
                 ]),
           ),
           //degrade
@@ -65,49 +65,14 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
                     colors: colorizeColors,
                     textAlign: TextAlign.center,
                   ),
-                  ColorizeAnimatedText(
-                    'Novos',
-                    textStyle: colorizeTextStyle,
-                    colors: colorizeColors,
-                    textAlign: TextAlign.center,
-                  ),
-                  ColorizeAnimatedText(
-                    'Seminovos',
-                    textStyle: colorizeTextStyle,
-                    colors: colorizeColors,
-                    textAlign: TextAlign.center,
-                  ),
                 ],
                 //isRepeatingAnimation: true,
                 totalRepeatCount: 1,
                 onTap: () {
                   print("Tap Event");
                 },
-                /* onFinished: () {
-                  Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (builder) => LoginPage()));
-                }, */
               ),
             ),
-
-//fim Animação
-
-            /*  child: AnimatedTextKit(
-              animatedTexts: [
-                FadeAnimatedText(
-                  'StoreCar',
-                  textStyle:
-                      TextStyle(fontSize: 52.0, fontWeight: FontWeight.bold, color: Colors.white),
-                ),
-                TypewriterAnimatedText(
-                  'Novos e seminovos',
-                  textStyle:
-                      TextStyle(fontSize: 32.0, fontFamily: 'Canterbury', color: Colors.white),
-                      speed: const Duration(milliseconds: 100)
-                ),
-              ],
-            ),
-             */
           ),
         ),
       ),
